@@ -6,7 +6,7 @@
     "typescript",
     "library"
   ],
-  "version": "1.0.1",
+  "version": "1.0.2",
   "license": "MIT",
   "scripts": {
     "start": "webpack-dev-server --env development --mode development --config webpack.dev.js --no-stats && node webpack",
