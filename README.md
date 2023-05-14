@@ -1,10 +1,17 @@
-# Velt
+<div align="center">
+  <h1>Velt</h1>
+  <h2>A TypeScript library for building interfaces</h2>
+  <a href="LICENSE.md" title="MIT"><img src="https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square"></a>
+  <a href="https://github.com/stnaoficial/velt/issues"><img src="https://img.shields.io/github/issues/stnaoficial/velt.svg" alt=""></a>
+  <a href="https://github.com/stnaoficial/velt/stargazers"><img src="https://img.shields.io/github/stars/stnaoficial/velt.svg" alt=""></a>
+  <a href="https://github.com/stnaoficial/velt/network"><img src="https://img.shields.io/github/forks/stnaoficial/velt.svg" alt=""></a>
+</div>
 
-# ****A TypeScript library for building interfaces****
+## About
 
 Velt is a lightweight and easy-to-use library for building interfaces in TypeScript. It provides a simple API for creating and rendering UI components, making it ideal for building small to medium-sized applications.
 
-## ****Installation****
+## Installation
 
 To install Velt, simply run the following command:
 
@@ -12,7 +19,7 @@ To install Velt, simply run the following command:
 yarn install velt
 ```
 
-## ****Usage****
+## Usage
 
 To use Velt in your TypeScript project, import it and start creating components. Here's an example:
 
@@ -54,7 +61,7 @@ velt(document.body,
 
 In this example, we're creating a **`div`** element with the class "my-class" and the text "Hello, world!". We're then appending this element to the **`document.body`** element.
 
-## ****API****
+## API
 
 The **`velt`** function is the main API of the Velt library. It takes one or more arguments:
 
@@ -64,6 +71,6 @@ The **`velt`** function is the main API of the Velt library. It takes one or mor
 - An object representing HTML attributes
 - A string representing text content
 
-## ****Conclusion****
+## Conclusion
 
 Velt is a lightweight and easy-to-use TypeScript library for building interfaces. Its simple API makes it ideal for small to medium-sized applications. Give it a try in your next project!
