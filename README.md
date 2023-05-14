@@ -16,7 +16,7 @@ Velt is a lightweight and easy-to-use library for building interfaces in TypeScr
 To install Velt, simply run the following command:
 
 ```bash
-yarn install velt
+> yarn install velt
 ```
 
 ## Usage
