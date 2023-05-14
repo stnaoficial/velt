@@ -4,6 +4,8 @@ const package = require("./package.json");
 const common = require("./webpack.common.js");
 const path = require('path');
 const chalk = require('chalk');
+const glob = require('glob');
+const fs = require('fs');
 
 function listener(server)
 {
@@ -14,7 +16,25 @@ function listener(server)
     console.log(`${ chalk.greenBright(`> Listening`) } ${ chalk.cyan.underline(`http://localhost:${ server.options.port }`) }\n`);
 }
 
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const { EnvironmentPlugin } = require('webpack');
+
+if (!fs.existsSync('./public')) {
+    throw new Error("The public development directory does not exist");
+}
+
 module.exports = merge(common, {
+    plugins: [
+        new HtmlWebpackPlugin({
+            template: path.resolve(__dirname, 'public/index.html')
+        }),
+        new EnvironmentPlugin({
+            // Env variables
+        })
+    ],
+    entry: {
+        public: glob.sync('./public/**/*.ts'),
+    },
     mode: "development",
     devtool: "cheap-source-map",
     infrastructureLogging: { level: 'error' },
