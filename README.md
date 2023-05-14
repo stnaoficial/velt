@@ -20,21 +20,21 @@ To use Velt in your TypeScript project, import it and start creating components.
 import velt from "velt";
 
 function Example({
-	children
+  children
 }: {
-	children: (HTMLElement | string)[]
+  children: (HTMLElement | string)[]
 }) {
-	return (
-	  velt("p",
-	      ...children
-	  )
-	);
+  return (
+    velt("p",
+        ...children
+    )
+  );
 }
 
 velt(document.body,
-	velt(Example,
-		"Hello, world!"
-	)
+  velt(Example,
+    "Hello, world!"
+  )
 );
 ```
 
@@ -46,9 +46,9 @@ Here's an example of using the **`velt`** function with an HTML tag name and att
 import velt from "velt";
 
 velt(document.body,
-	velt("div", { class: "my-class" },
-		"Hello, world!"
-	)
+  velt("div", { class: "my-class" },
+    "Hello, world!"
+  )
 );
 ```
 
